@@ -7,6 +7,16 @@ In the competitive app market, understanding what drives user satisfaction and a
 ### 3.Prediction Data Target
 The target variable for prediction is Rating, which reflects user satisfaction and app quality. The objective is to identify the variables that have the most impact on Rating and leverage these insights to improve app performance. Key candidates include Reviews, Installs, and Rating Categories (High/Medium/Low), which collectively influence user perception and engagement.
 ### 4.Choice of Data
+
+
+### Part 1: Exploring pre-trained NLP models
+- HuggingFace models and libraries
+- Text classification
+- Translation
+- Summarization
+- Question answering and chatbots
+
+- 
 Focus on App Quality
 -The Rating variable serves as a direct measure of user satisfaction and app quality, making it essential for predicting performance.
 -Example: Understanding how features like Size and Price influence higher ratings provides clear avenues for improvement.
