@@ -24,7 +24,7 @@
 ### Models Used:
 - XGBoost: Selected for its scalability and effectiveness with large datasets.
 - Random Forest Regressor: Chosen for comparison due to its ensemble nature and robustness.
-Both models were fine-tuned and optimized using DataRobot, which automated model selection, hyperparameter tuning, and cross-validation for efficient performance improvement.
+#### Both models were fine-tuned and optimized using DataRobot, which automated model selection, hyperparameter tuning, and cross-validation for efficient performance improvement.
 ### Key Insights:
 - Rating Categories: Most influential predictor.
 - Installs & Reviews: Strong indicators of app popularity.
