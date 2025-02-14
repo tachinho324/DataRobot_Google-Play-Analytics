@@ -1,5 +1,3 @@
-# DataRobot_Google-Play-Analytics
-
 # I. ​Project Overview 
 -1.Introduction
 This analysis utilizes a refined Google Play Store dataset to predict app performance, with a focus on Rating as a key indicator of user satisfaction. By leveraging actionable insights, developers can optimize app features, and businesses can target promotions and categories to enhance user satisfaction and drive app success.
