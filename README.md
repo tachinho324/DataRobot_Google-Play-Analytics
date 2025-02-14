@@ -8,16 +8,16 @@ In the competitive app market, understanding what drives user satisfaction and a
 The target variable for prediction is Rating, which reflects user satisfaction and app quality. The objective is to identify the variables that have the most impact on Rating and leverage these insights to improve app performance. Key candidates include Reviews, Installs, and Rating Categories (High/Medium/Low), which collectively influence user perception and engagement.
 ### 4.Choice of Data
 Focus on App Quality
-The Rating variable serves as a direct measure of user satisfaction and app quality, making it essential for predicting performance.
-Example: Understanding how features like Size and Price influence higher ratings provides clear avenues for improvement.
+-The Rating variable serves as a direct measure of user satisfaction and app quality, making it essential for predicting performance.
+-Example: Understanding how features like Size and Price influence higher ratings provides clear avenues for improvement.
 Actionable Insights
-Developers can enhance features such as size, pricing, and update frequency to boost retention.
-Businesses can refine strategies for promotions and focus on high-potential app categories.
+-Developers can enhance features such as size, pricing, and update frequency to boost retention.
+-Businesses can refine strategies for promotions and focus on high-potential app categories.
 High-Quality Dataset
-Cleaned and preprocessed to ensure no missing values in key variables like Rating.
-Enhanced with derived features (Log_Installs, Log_Reviews) to address skewness and improve predictive accuracy.
+-Cleaned and preprocessed to ensure no missing values in key variables like Rating.
+-Enhanced with derived features (Log_Installs, Log_Reviews) to address skewness and improve predictive accuracy.
 Business Relevance
-Provides insights to allocate resources effectively, improve app features, and address underserved categories, enabling data-driven growth strategies.
+-Provides insights to allocate resources effectively, improve app features, and address underserved categories, enabling data-driven growth strategies.
 
 Data Dictionary
 Column Name
