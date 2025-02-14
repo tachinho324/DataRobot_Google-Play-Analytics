@@ -29,7 +29,7 @@
 - Top Predictors: Rating Category, Installs, Reviews.
 - SHAP Analysis: Confirms these as key drivers of app ratings.
 
-# V. Conclusion & Recommendations
+# V. Conclusion 
 ### Key Insights:
 - Higher Installs & Reviews boost ratings.
 - Frequent updates improve app perception.
