@@ -20,14 +20,21 @@
 - Free apps generally receive better ratings than paid apps.
 - Frequent updates correlate with higher ratings.
 
-# IV. Model & Evaluation
-### Models - XGBoost Regressor (best performer) vs. Random Forest Regressor.
-### Performance Metrics (XGBoost):
-- R²: Validation - 0.8210, Cross-Validation - 0.8132, Holdout - 0.8007
-- MAPE: Validation - 4.65, Holdout - 4.72 (outperformed Random Forest).
-### Feature Importance:
-- Top Predictors: Rating Category, Installs, Reviews.
-- SHAP Analysis: Confirms these as key drivers of app ratings.
+# IV. Modeling & Cross-Validation Summary
+### Models Used:
+- XGBoost: Selected for its scalability and effectiveness with large datasets.
+- Random Forest Regressor: Chosen for comparison due to its ensemble nature and robustness.
+Both models were fine-tuned and optimized using DataRobot, which automated model selection, hyperparameter tuning, and cross-validation for efficient performance improvement.
+### Key Insights:
+- Rating Categories: Most influential predictor.
+- Installs & Reviews: Strong indicators of app popularity.
+- Days Since Update & Content Rating: Moderately impactful.
+### Cross-Validation: 
+- 5-fold approach confirmed model stability and minimized overfitting.
+### Model Strengths:
+- Automated Optimization: DataRobot streamlined hyperparameter tuning for peak performance.
+- Scalability: XGBoost efficiently handled large datasets.
+- Interpretability: SHAP analysis provided actionable insights to drive targeted improvements.
 
 # V. Conclusion 
 ### Key Insights:
