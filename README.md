@@ -1,8 +1,8 @@
 # I. ​Project Overview 
-- Objective: Predict app ratings to optimize features, enhance user satisfaction, and drive app success.
-- Business Problem: Identify key factors influencing ratings to help developers and businesses improve app performance.
-- Target Variable: Rating—impacted by Reviews, Installs, and Rating Categories.
-- Data Choice: Cleaned dataset with derived features (e.g., Log_Installs, Log_Reviews) for improved accuracy.
+### Objective: Predict app ratings to optimize features, enhance user satisfaction, and drive app success using DataRobot, an advanced AI analytics tool. This AI-driven approach enables efficient analysis of large datasets with multiple models and configurations, improving accuracy and saving time. By automating data processing, we can focus on strategic insights that drive business growth.
+### Business Problem: Identify key factors influencing ratings to help developers and businesses improve app performance.
+### Target Variable: Rating—impacted by Reviews, Installs, and Rating Categories.
+### Data Choice: Cleaned dataset with derived features (e.g., Log_Installs, Log_Reviews) for improved accuracy.
 
 # II. Data Transformation
 ### Key Steps:
