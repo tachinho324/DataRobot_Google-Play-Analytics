@@ -60,57 +60,62 @@ The transformations resulted in a cleaner and more uniform dataset, with enhance
 ### 1. Univariate Analysis
 - Objective: Understand the distribution and characteristics of individual variables.
 - Insights:
-Rating: Most apps received ratings between 4 and 5, indicating a positive bias in user reviews.
-Installs: Highly skewed, with a majority of apps having fewer installations, while a few popular apps had millions of installs.
-Reviews: Similar skewness as Installs, with a few apps garnering the majority of reviews.
-Price: Most apps were free, with only a small proportion of paid apps priced under $10.
-2. Bivariate Analysis
-Objective: Explore relationships between variables to identify potential predictors of Rating.
-Insights:
-Rating vs. Installs: Positive correlation observed; apps with higher installations tend to have better ratings.
-Rating vs. Price: Free apps generally have higher ratings compared to paid apps.
-Rating vs. Reviews: Strong positive relationship; more reviews indicate higher user engagement and satisfaction.
-3. Multivariate Analysis
-Objective: Examine interactions between variables to uncover deeper insights.
-Insights:
-Apps with high Installs and frequent updates (days_since_update) tended to maintain higher ratings.
-Paid apps with low Price_Installs often had lower ratings, suggesting value-for-money considerations.
-Genres like "Productivity" and "Games" dominated high-rating categories, while niche genres showed mixed results.
-4. Visualization Summary
-Rating Distribution: A histogram revealed a left-skewed distribution, with most ratings concentrated in the 4-5 range.
-Correlation Heatmap: Highlighted significant relationships between Installs, Reviews, and Rating.
-Scatter Plots: Explored relationships such as Rating vs. Log_Installs and Rating vs. days_since_update, reinforcing earlier observations.
-5. Conclusion
+-- Rating: Most apps received ratings between 4 and 5, indicating a positive bias in user reviews.
+-- Installs: Highly skewed, with a majority of apps having fewer installations, while a few popular apps had millions of installs.
+-- Reviews: Similar skewness as Installs, with a few apps garnering the majority of reviews.
+-- Price: Most apps were free, with only a small proportion of paid apps priced under $10.
+
+### 2. Bivariate Analysis
+- Objective: Explore relationships between variables to identify potential predictors of Rating.
+- Insights:
+-- Rating vs. Installs: Positive correlation observed; apps with higher installations tend to have better ratings.
+-- Rating vs. Price: Free apps generally have higher ratings compared to paid apps.
+-- Rating vs. Reviews: Strong positive relationship; more reviews indicate higher user engagement and satisfaction.
+  
+### 3. Multivariate Analysis
+- Objective: Examine interactions between variables to uncover deeper insights.
+- Insights:
+-- Apps with high Installs and frequent updates (days_since_update) tended to maintain higher ratings.
+-- Paid apps with low Price_Installs often had lower ratings, suggesting value-for-money considerations.
+- Genres like "Productivity" and "Games" dominated high-rating categories, while niche genres showed mixed results.
+
+### 4. Visualization Summary
+- Rating Distribution: A histogram revealed a left-skewed distribution, with most ratings concentrated in the 4-5 range.
+- Correlation Heatmap: Highlighted significant relationships between Installs, Reviews, and Rating.
+- Scatter Plots: Explored relationships such as Rating vs. Log_Installs and Rating vs. days_since_update, reinforcing earlier observations.
+
+### 5. Conclusion
 The data exploration phase highlighted critical variables influencing app ratings, such as Installs, Reviews, and Price. These insights guided feature selection and informed the subsequent modeling phase.
 
-IV. Models + Cross-Validation
+# IV. Models + Cross-Validation
 To determine the factors influencing app ratings, we utilized an eXtreme Gradient Boosted Trees (XGBoost) Regressor. This model is well-suited for handling structured data and provides excellent interpretability through feature importance analysis. Below are the key aspects of the model development process and other model compared with; XGBoost Regressor, a powerful algorithm for structured data, complemented by Random Forest Regressor for comparison.
-1. Model Performance
-eXtreme Gradient Boosted Trees (XGBoost) Regressor
+### 1. Model Performance
+- eXtreme Gradient Boosted Trees (XGBoost) Regressor
 Training Metrics: R²
 Validation: 0.8210
 Cross-Validation: 0.8132
 Holdout: 0.8007
 
-eXtreme Gradient Boosted Trees (XGBoost) Regressor
+- eXtreme Gradient Boosted Trees (XGBoost) Regressor
 Training Metrics: MAPE
 Validation: 4.6528
 Cross-Validation: 4.6815
 Holdout: 4.7216
 
-RandomForest Regressor
+- RandomForest Regressor
 Training Metrics: R²
 Validation: 0.8156
 Cross-Validation: 0.8019
 Holdout: 0.7951
 
-RandomForest Regressor
+- RandomForest Regressor
 Training Metrics: MAPE
 Validation: 4.7270
 Cross-Validation: 4.7660
 Holdout: 4.7688
-Key Points:
-Metrics and Results:
+
+### Key Points:
+- Metrics and Results:
 R² Scores:
 Validation: 0.8210 (XGBoost) vs. 0.8156 (Random Forest)
 Cross-Validation: 0.8132 (XGBoost) vs. 0.8019 (Random Forest)
