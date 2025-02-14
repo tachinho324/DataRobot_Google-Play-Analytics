@@ -18,12 +18,13 @@
 
 # IV. Model & Evaluation
 - Models: XGBoost Regressor (best performer) vs. Random Forest Regressor.
-- Performance Metrics (XGBoost):
+### Performance Metrics (XGBoost):
 - R²: Validation - 0.8210, Cross-Validation - 0.8132, Holdout - 0.8007
 - MAPE: Validation - 4.65, Holdout - 4.72 (outperformed Random Forest).
-Feature Importance:
-Top Predictors: Rating Category, Installs, Reviews.
-SHAP Analysis: Confirms these as key drivers of app ratings.
+### Feature Importance:
+- Top Predictors: Rating Category, Installs, Reviews.
+- SHAP Analysis: Confirms these as key drivers of app ratings.
+
 # V. Conclusion & Recommendations
 Key Insights:
 Higher Installs & Reviews boost ratings.
