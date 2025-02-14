@@ -27,32 +27,39 @@ Business Relevance
 # II. Data Transformation
 ### Overview
 The data transformation process focused on standardizing, cleaning, and preparing the dataset to ensure it was suitable for modeling. Key transformations included imputing missing values, converting data types, and creating new features to enhance predictive performance.
-Steps in Data Transformation
-Handling Missing and Invalid Values
-Removed rows where the Rating was missing or greater than 5 (invalid values).
-Replaced "Varies with device" in the Size column with NA and imputed missing values using the median size within each category.
-Standardization
-Converted the Size column to a uniform unit (kilobytes) for consistency.
-Removed special characters in Reviews, Installs, and Price columns (+, ,, $) and converted them to numeric types.
-Feature Engineering
-Created Log_Installs and Log_Reviews by log-transforming the highly skewed Installs and Reviews columns to address skewness.
-Generated days_since_update to capture recency as the difference in days between the current date and the Last.Updated field.
-Designed an interaction feature, Price_Installs, to measure the combined effect of app price and installation count.
-Categorical Simplification
-Extracted the primary genre from the Genres column by keeping only the first entry (e.g., "Puzzle; Action" → "Puzzle").
-Grouped rare genres into an "Other" category to reduce noise.
-Scaling
-Standardized numeric columns (Rating, Reviews, Size, Installs, Price) to ensure comparability using z-scores.
-Scaled variables were added as new columns (Scaled_Rating, Scaled_Reviews, etc.) without overwriting the original data.
-Binning
+
+### Steps in Data Transformation
+#### 1.Handling Missing and Invalid Values
+- Removed rows where the Rating was missing or greater than 5 (invalid values).
+- Replaced "Varies with device" in the Size column with NA and imputed missing values using the median size within each category.
+- 
+#### 2.Standardization
+- Converted the Size column to a uniform unit (kilobytes) for consistency.
+- Removed special characters in Reviews, Installs, and Price columns (+, ,, $) and converted them to numeric types.
+  
+#### 3.Feature Engineering
+- Created Log_Installs and Log_Reviews by log-transforming the highly skewed Installs and Reviews columns to address skewness.
+- Generated days_since_update to capture recency as the difference in days between the current date and the Last.Updated field.
+- Designed an interaction feature, Price_Installs, to measure the combined effect of app price and installation count.
+- 
+#### 4.Categorical Simplification
+- Extracted the primary genre from the Genres column by keeping only the first entry (e.g., "Puzzle; Action" → "Puzzle").
+- Grouped rare genres into an "Other" category to reduce noise.
+
+#### 5.Scaling
+- Standardized numeric columns (Rating, Reviews, Size, Installs, Price) to ensure comparability using z-scores.
+- Scaled variables were added as new columns (Scaled_Rating, Scaled_Reviews, etc.) without overwriting the original data.
+
+#### 6.Binning
 Categorized Rating into Rating_Category with three levels: "Low" (1-3), "Medium" (3-4), and "High" (4-5) for better interpretability.
-Key Outcomes
+
+### Key Outcomes
 The transformations resulted in a cleaner and more uniform dataset, with enhanced features to improve model interpretability and predictive power.
 
-III. Data Exploration
-1. Univariate Analysis
-Objective: Understand the distribution and characteristics of individual variables.
-Insights:
+# III. Data Exploration
+### 1. Univariate Analysis
+- Objective: Understand the distribution and characteristics of individual variables.
+- Insights:
 Rating: Most apps received ratings between 4 and 5, indicating a positive bias in user reviews.
 Installs: Highly skewed, with a majority of apps having fewer installations, while a few popular apps had millions of installs.
 Reviews: Similar skewness as Installs, with a few apps garnering the majority of reviews.
