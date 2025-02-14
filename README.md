@@ -1,6 +1,6 @@
 # I. ​Project Overview 
 ### Objective: 
-- Predict app ratings to optimize features, enhance user satisfaction, and drive app success using DataRobot, an advanced AI analytics tool. This AI-driven approach enables efficient analysis of large datasets with multiple models and configurations, improving accuracy and saving time. By automating data processing, we can focus on strategic insights that drive business growth.
+- We use DataRobot, an advanced AI analytics tool to Predict app ratings to optimize features, enhance user satisfaction, and drive app succes. This AI-driven approach enables efficient analysis of large datasets with multiple models and configurations, improving accuracy and saving time. By automating data processing, we can focus on strategic insights that drive business growth.
 ### Business Problem: 
 - Identify key factors influencing ratings to help developers and businesses improve app performance.
 ### Target Variable: 
@@ -39,4 +39,4 @@
 - Optimize Features: Focus on frequently updated, well-rated categories.
 - Segment & Target: Use Rating Categories for personalized engagement strategies.
 
-This analysis equips developers and businesses with data-driven strategies to enhance app success.
+### This analysis equips developers and businesses with data-driven strategies to enhance app success.
