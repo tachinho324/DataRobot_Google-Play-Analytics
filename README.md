@@ -23,77 +23,9 @@ The target variable for prediction is Rating, which reflects user satisfaction a
 Business Relevance
 -Provides insights to allocate resources effectively, improve app features, and address underserved categories, enabling data-driven growth strategies.
 
-Data Dictionary
-Column Name
-Description
-Data Type
-Category
-App Genre Category 
-Categorical
 
-
-Rating
-Average user rating of the app (range: 1.0 to 5.0).
-Continuous
-Reviews
-Number of user reviews for the app.
-Numeric (int)
-Size
-Size of the app in kilobytes.
-Numeric (float)
-Installs
-Total number of app installations.
-Numeric (int)
-Type
-Type of app (e.g., Free or Paid)
-Categorical
-Price
-Price of the app (0 for free apps)
-Numeric (float)
-Content.Rating
-Recommended user age group (e.g., Everyone, Teen)
-Categorical
-Genres
-Primary app genre (e.g., Puzzle, Action)
-Categorical
-Last.Updated
-Date when the app was last updated
-Date
-days_since_update
-Days since the app was last updated
-Numeric (int)
-Price_Installs
-Interaction effect combining price and installs
-Numeric (float)
-Log_Installs
-Log-transformed value of the Installs column
-Numeric (float)
-Log_Reviews
-Log-transformed value of the Reviews column
-Numeric (float)
-Rating_Category
-Categorized version of Rating (e.g., High, Medium, Low)
-Categorical
-Scaled_Rating
-Normalized Rating column
-Numeric (float)
-Scaled_Reviews
-Normalized Reviews column
-Numeric (float)
-Scaled_Size
-Normalized Size column
-Numeric (float)
-Scaled_Installs
-Normalized Installs column
-Numeric (float)
-Scaled_Price
-Normalized Price column
-Numeric (float)
-
-
-
-II. Data Transformation
-Overview
+# II. Data Transformation
+### Overview
 The data transformation process focused on standardizing, cleaning, and preparing the dataset to ensure it was suitable for modeling. Key transformations included imputing missing values, converting data types, and creating new features to enhance predictive performance.
 Steps in Data Transformation
 Handling Missing and Invalid Values
